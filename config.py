@@ -3,7 +3,6 @@ config = {
     'hidden_dim': 256,
     'actor_lr': 3e-4,
     'critic_lr': 3e-4,
-    # 'alpha': 0.2,  # SAC currently learns the temp automatically, don't rlly need this
     'alpha_lr': 3e-4,
     'tau': 0.005,  # soft target update parameter
     'gamma': 0.99,  # discount factor for future rewards

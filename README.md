@@ -2,6 +2,9 @@
 
 This project implements a **Soft Actor-Critic (SAC)** agent from scratch to solve the continuous control task **BipedalWalker-v3** from OpenAI Gymnasium.
 
+## Project Context
+This implementation was one component of a broader comparative study involving PPO, TD3, DDPG, and SAC.
+
 ## Project Structure
 
 ```
@@ -65,3 +68,9 @@ The evaluation script will:
 - **Critic Networks** (two Q-functions) mitigate overestimation bias.
 - **Entropy Coefficient** (α) is automatically learned during training to balance exploration and exploitation.
 - **Soft Updates** are applied to target networks every step.
+
+## Authors and Contributions
+
+The code within this repository are primarily authored by Larisa F.
+
+The file `replay_buffer.py` was developed by my group partner, Jithin C.

@@ -80,12 +80,7 @@ In our comparative study of **DDPG, TD3, PPO, and SAC** on **BipedalWalker-v3**:
 | TD3       | 262.5       | 17.9      |
 | SAC       | **312.2**   | **10.5**  |
 
-![SAC Training Curve](figures/sac_training_curve.png)  
-
-### Full Report
-
-For detailed methodology and results, see the full report:  
-[RL_Bipedal_Walker.pdf](reports/RL_Bipedal_Walker.pdf)
+![SAC Training Curve](figures/sac_training_curve.png)
 
 
 ## Notes

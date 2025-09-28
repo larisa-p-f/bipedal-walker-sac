@@ -85,7 +85,7 @@ In our comparative study of **DDPG, TD3, PPO, and SAC** on **BipedalWalker-v3**:
 ### Full Report
 
 For detailed methodology and results, see the full report:  
-[📄 RL_Bipedal_Walker.pdf](reports/RL_Bipedal_Walker.pdf)
+[RL_Bipedal_Walker.pdf](reports/RL_Bipedal_Walker.pdf)
 
 
 ## Notes

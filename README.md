@@ -61,6 +61,33 @@ The evaluation script will:
 - Save a plot of rewards (`evaluation_results.png`)
 - Save an evaluation summary as JSON.
 
+## Results and Comparison
+
+In our comparative study of **DDPG, TD3, PPO, and SAC** on **BipedalWalker-v3**:
+
+- **SAC** achieved the highest performance, with an **average evaluated return of 312.2 ± 10.5**, consistently exceeding the 300-point “solved” threshold.  
+- **TD3** followed with an average of **262.5 ± 17.9**, showing strong stability but not reaching the same peak as SAC.  
+- **PPO** achieved **227.3 ± 43.1**, performing well initially but plateauing around 150 during training, indicating limits in sample efficiency.  
+- **DDPG** struggled, averaging **80.0 ± 180.6**, with high variance and instability.  
+
+**Summary Table (100-episode evaluation):**
+
+| Algorithm | Avg. Return | Std. Dev. |
+|-----------|-------------|-----------|
+| Random    | -100.3      | 0.9       |
+| DDPG      | 80.0        | 180.6     |
+| PPO       | 227.3       | 43.1      |
+| TD3       | 262.5       | 17.9      |
+| SAC       | **312.2**   | **10.5**  |
+
+![SAC Training Curve](figures/sac_training_curve.png)  
+
+### Full Report
+
+For detailed methodology and results, see the full report:  
+[📄 RL_Bipedal_Walker.pdf](reports/RL_Bipedal_Walker.pdf)
+
+
 ## Notes
 
 - **Replay Buffer** stores (state, action, reward, next_state, done) tuples for experience replay.
@@ -73,4 +100,6 @@ The evaluation script will:
 
 The code within this repository are primarily authored by Larisa F.
 
-The file `replay_buffer.py` was developed by my group partner, Jithin C.
+The file `replay_buffer.py` was developed by my one of my group partners, Jithin C.
+
+The comparative results come from a group project with **Rob E., Visahan S., Omar R., and Ronan S.**
